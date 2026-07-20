@@ -1,3 +1,6 @@
+Note: The public repository demonstrates the project architecture. The live trading endpoint shown in the demo video is intentionally not exposed publicly because it connects to a private Interactive Brokers environment.
+
+
 # AI Trading Decision OS
 
 > An AI-powered decision operating system that helps traders evaluate market regime, market bias, entry quality, and risk using live market data and structured AI reasoning.
