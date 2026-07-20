@@ -27,23 +27,25 @@ Unlike traditional trading assistants that primarily generate buy or sell signal
 
 ## Architecture
 
+```mermaid
+flowchart TD
+    A[Trader] --> B[ChatGPT Custom GPT]
+    B --> C[OpenAI Actions]
+    C --> D[FastAPI Trading API]
+    D --> E[Interactive Brokers]
+    D --> F[Live Market Data]
+    E --> G[Decision Engine]
+    F --> G
+    G --> H[Market Regime]
+    G --> I[Market Bias]
+    G --> J[Entry Quality]
+    G --> K[Risk Assessment]
+    H --> L[Final Trading Decision]
+    I --> L
+    J --> L
+    K --> L
+    L --> M[LONG / SHORT / WATCH / NO TRADE]
 ```
-Live Market Data
-        │
-        ▼
-   Trading API
-        │
-        ▼
- Decision Engine
-        │
-        ▼
- Risk Assessment
-        │
-        ▼
- Final Trading Decision
-```
-
----
 
 ## Technologies
 
